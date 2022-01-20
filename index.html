@@ -11,45 +11,8 @@
     body {font-size:16px;}
     .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
     .w3-half img:hover{opacity:1}
-
-    .middle {
-        transition: .5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
-    .container1 {
-        position: relative;
-        width: 75%;
-    }
-    .container1:hover .imageback {
-        opacity: 0.3;
-    }
-
-    .container1:hover .middle {
-        opacity: 1;
-    }
-
-    .textforimage {
-        background-color: red;
-        color: white;
-        font-size: 16px;
-        padding: 16px 32px;
-    }
-
-    .imageback {
-        opacity: 1;
-        display: block;
-        width: 100%;
-        height: auto;
-        transition: .5s ease;
-        backface-visibility: hidden;
-    }
+    .bigimage img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+    .bigimage img:hover{opacity: 1}
 
     .hidden { display: none; }
 
@@ -60,12 +23,12 @@
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
     <div class="w3-container">
-        <h3 class="w3-padding-64"><b>Chelsea Bridge<br>Connect Group</b></h3>
+        <h3 class="w3-padding-64"><b>Chelsea Bridge Connect Group</b></h3>
     </div>
     <div class="w3-bar-block">
         <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
         <a href="#intro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Who are we?</a>
-        <a href="#announce" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Announcements</a>
+        <a href="#updates" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Updates</a>
         <a href="#calendar" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Calendar</a>
         <a href="#members" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Members</a>
         <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
@@ -94,24 +57,25 @@
     <!-- Photo grid (modal) -->
     <div class="w3-row-padding">
 <!--        <div class="w3-half">-->
-<!--            <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">-->
-<!--            <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">-->
-<!--            <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">-->
+<!--           <img src="group.jpeg" style="width:100%" onclick="onClick(this)" alt="Group Image">-->
 <!--        </div>-->
 
-<!--        <div class="w3-half">-->
-<!--            <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">-->
-<!--            <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">-->
-<!--            <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">-->
+<!--        <div class="w3-half" style="padding-left: 12px; padding-top: 12px">-->
+<!--            <p>We are a connect group associated with Holy Trinity Brompton. We attend the 18:30 service at HTB Onslow Square and we-->
+<!--            meet on Tuesday evenings at 19:00 at Church Home. We are a group of social young professionals who value deep community-->
+<!--                rooted in Jesus Christ along with a good time.</p>-->
 <!--        </div>-->
-        <div class="container1">
-            <img src="group.jpeg" alt="Group Image" class="imageback" style="width:100%">
-            <div class="middle">
-                <div class="textforimage">We are a connect group associated with Holy Trinity Brompton. We attend the 18:30 service at HTB Onslow Square
-                and we meet on Tuesday evenings at 19:00 at Church Home. We are a group of social young professionals who value deep community rooted
-                in Jesus Christ along with a good time.</div>
+            <div class="bigimage">
+                <img src="group.jpeg" style="width:100%" onclick="onClick(this)" alt="Group Image">
             </div>
-        </div>
+
+            <div class="w3-container w3-red">
+                <p>We are a connect group associated with Holy Trinity Brompton. We attend the 18:30 service at HTB Onslow Square and we
+                    meet on Tuesday evenings at 19:00 at Church Home. We are a group of social young professionals who value deep community
+                    rooted in Jesus Christ along with a good time.</p>
+            </div>
+
+
     </div>
 
     <!-- Modal for full size images on click-->
@@ -123,11 +87,11 @@
         </div>
     </div>
 
-    <!-- Announcements -->
-    <div class="w3-container" id="announce" style="margin-top:75px">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Announcements.</b></h1>
+    <!-- Updates -->
+    <div class="w3-container" id="updates" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Updates.</b></h1>
         <hr style="width:50px;border:5px solid red" class="w3-round">
-        <div class="w3-half" style="padding-right: 12px">
+        <div class="w3-half" style="padding-right: 12px; padding-top: 12px">
             <p style="font-size: larger">Group is up and running as normal!</p>
             <p>We are currently running a weekly study in the gospel of Luke. Come along and join us for some intentional time of community and learning. You can also join us at the pub on Sunday evening after
                 the 18:30 service at HTB Onslow Square. Please see contact information for how to get in touch.
@@ -136,6 +100,7 @@
         <div class="w3-half">
             <img src="walking.jpeg" style="width:100%" onclick="onClick(this)" alt="Group walk">
         </div>
+
 
     </div>
 
@@ -149,7 +114,7 @@
         <p><b>Everyone is welcome to join our events:</b>:</p>
 
         <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLondon&src=Y2hlbHNlYWJyaWRnZWNnQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043"
-                style="border:solid 1px #777" width=80% height="600px" frameborder="0" scrolling="no"></iframe>
+                style="border:solid 1px #777" width=100% height="600px" frameborder="0" scrolling="no"></iframe>
     </div>
 
     <!-- The Team -->
@@ -219,7 +184,7 @@
         Any other pertinent member-only information can go here!</p>
 
 
-        <iframe src="https://www.google.com/maps/d/embed?mid=1c40tfW04kfgWTqWJYbCihYXnFQqEipYL&ehbc=2E312F" width=80% height="480"></iframe>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1c40tfW04kfgWTqWJYbCihYXnFQqEipYL&ehbc=2E312F" width=100% height="480"></iframe>
     </div><!-- Added class -->
 
     </div>
